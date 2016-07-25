@@ -13,21 +13,26 @@
 
 {
     RDLiveSDK * rtmpPlayer;
-
 }
 
-@property (nonatomic, readonly) UIView *playerView;
 
-- (instancetype)init:(void (^)(RDLiveAuthorizationType))successBlock error:(void (^)(NSError *))errorBlock;
 
-- (void)setUrl:(NSString *)url;
 
-- (void)setPlayerviewframe:(NSInteger) x withY:(NSInteger) y withWidth:(NSInteger)width withHeight:(NSInteger) height;
+/*
+ - (instancetype)init:(void (^)(RDLiveAuthorizationType))successBlock error:(void (^)(NSError *))errorBlock;
+ */
 
-- (void)play;
+- (void)setrtmpPlayer:(void (^)(RDLiveAuthorizationType))successBlock error:(void (^)(NSError *))errorBlock;
 
--(void)setPlayerDelegate;
+-(void)setrtmpPlayer_url:(NSString *)url;
 
--(void) losePlayerDelegate;
+-(void)setrtmpPlayer_frame;
+
+-(void)setrtmpPlayer_Delegate:(id) x;
+
+-(UIView *)get_playerview;
+
+-(void)play;
+
 
 @end
