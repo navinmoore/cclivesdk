@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "RDLiveSDK.h"
+#import "RSA.h"
+
 
 @interface cclivesdk : NSObject
 
@@ -33,6 +35,9 @@
 -(UIView *)get_playerview;
 
 -(void)play;
+
+- (NSDictionary *) request_token:(NSString *)userName andWithpassword: (NSString *)passWord;
+- (NSArray *)request_channellist:(NSString *)token;
 
 
 @end
