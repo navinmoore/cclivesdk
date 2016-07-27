@@ -15,6 +15,9 @@
 
 {
     RDLiveSDK * rtmpPlayer;
+    int num;
+    UILabel *timelabel;
+    NSTimer *timeNow;
 }
 
 
@@ -35,6 +38,15 @@
 -(UIView *)get_playerview;
 
 -(void)play;
+
+-(void)stop;
+
+- (void)setMute:(BOOL)value;
+
+
+- (void)getLiveInfoWithUid:(NSString *)userID
+                   success:(void (^)(NSDictionary *liveInfoDic))successBlock
+                     error:(void (^)(NSError *error))errorBlock;
 
 - (NSDictionary *) request_token:(NSString *)userName andWithpassword: (NSString *)passWord;
 - (NSArray *)request_channellist:(NSString *)token;
