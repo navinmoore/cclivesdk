@@ -48,6 +48,14 @@
                    success:(void (^)(NSDictionary *liveInfoDic))successBlock
                      error:(void (^)(NSError *error))errorBlock;
 
+
+- (UIImage *)get_rtmpPlayerSnapshot;
+
+- (void)set_full;
+
+-(void)set_window;
+
+
 - (NSDictionary *) request_token:(NSString *)userName andWithpassword: (NSString *)passWord;
 - (NSArray *)request_channellist:(NSString *)token;
 
