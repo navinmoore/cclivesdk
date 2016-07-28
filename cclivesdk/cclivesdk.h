@@ -2,7 +2,7 @@
 //  cclivesdk.h
 //  cclivesdk
 //
-//  Created by navin on 25/7/21.
+//  Created by navin on 16/7/21.
 //  Copyright © 2016年 capitalcloud. All rights reserved.
 //
 
@@ -18,6 +18,9 @@
     int num;
     UILabel *timelabel;
     NSTimer *timeNow;
+    
+    UILabel * control;
+    UIButton *full;
 }
 
 
