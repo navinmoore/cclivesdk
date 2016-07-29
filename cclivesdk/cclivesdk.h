@@ -19,8 +19,13 @@
     UILabel *timelabel;
     NSTimer *timeNow;
     
-    UILabel * control;
-    UIButton *full;
+    
+    
+    
+    UIButton *fullScreenButton;
+    UIButton * windowScreenButton;
+    
+    
 }
 
 
@@ -42,6 +47,8 @@
 
 -(void)play;
 
+
+
 -(void)stop;
 
 - (void)setMute:(BOOL)value;
@@ -54,9 +61,7 @@
 
 - (UIImage *)get_rtmpPlayerSnapshot;
 
-- (void)set_full;
 
--(void)set_window;
 
 
 - (NSDictionary *) request_token:(NSString *)userName andWithpassword: (NSString *)passWord;
